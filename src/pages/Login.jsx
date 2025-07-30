@@ -2,16 +2,26 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 function Login() {
-  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
 const handleLogin = () => {
-    if (email === 'admin@example.com' && password === 'admin123') {
+    if (username === 'admin' && password === 'admin123') {
       Swal.fire({
         icon: 'success',
         title: 'Login berhasil!',
-        text: `Selamat datang, ${email}`,
+        text: `Selamat datang, ${username}`,
+        timer: 2000,
+        showConfirmButton: false,
+      }).then(() => {
+        navigate('/dashboardadmin');
+      });
+    } else if (username === 'user' || password === 'user123') {
+        Swal.fire({
+        icon: 'success',
+        title: 'Login berhasil!',
+        text: `Selamat datang, ${username}`,
         timer: 2000,
         showConfirmButton: false,
       }).then(() => {
@@ -21,13 +31,13 @@ const handleLogin = () => {
       Swal.fire({
         icon: 'error',
         title: 'Login gagal!',
-        text: 'Email atau password salah.',
+        text: 'Username atau password salah.',
       });
     }
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-800 to-indigo-900 flex items-center justify-center bg-cover bg-center relative overflow-hidden">
+  <div className="min-h-screen bg-gradient-to-b from-[#263B56] to-[#DCC4D2] flex items-center justify-center bg-cover bg-center relative overflow-hidden">
 
       {/* Card Login */}
       <div className="backdrop-blur-md bg-white/10 border border-white/30 p-8 rounded-2xl shadow-lg w-full max-w-sm z-10 text-white">
@@ -35,10 +45,10 @@ const handleLogin = () => {
 
         <div className="mb-4">
           <input
-            type="email"
-            placeholder="Email"
+            type="username"
+            placeholder="Username"
             className="w-full p-3 rounded-lg bg-white/20 placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-white"
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(e) => setUsername(e.target.value)}
           />
         </div>
 
@@ -61,7 +71,7 @@ const handleLogin = () => {
 
         <button
           onClick={handleLogin}
-          className="w-full bg-white text-purple-800 font-bold py-2 rounded-full hover:bg-purple-200 transition"
+          className="w-full bg-[#0E1F2F] text-white font-bold py-2 rounded-full hover:bg-[#85A5D3] transition"
         >
           Login
         </button>
