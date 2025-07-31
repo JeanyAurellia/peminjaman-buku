@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "buku_id": 1,
+    "users_id": null,
+    "tanggal_pinjam": null,
+    "tanggal_kembali": null,
+    "status_peminjaman": "tersedia"
+  },
+  {
+    "id": 2,
+    "buku_id": 2,
+    "users_id": null,
+    "tanggal_pinjam": null,
+    "tanggal_kembali": null,
+    "status_peminjaman": "tersedia"
+  },
+  {
+    "id": 3,
+    "buku_id": 3,
+    "users_id": null,
+    "tanggal_pinjam": null,
+    "tanggal_kembali": null,
+    "status_peminjaman": "tersedia"
+  },
+  {
+    "id": 4,
+    "buku_id": 4,
+    "users_id": null,
+    "tanggal_pinjam": null,
+    "tanggal_kembali": null,
+    "status_peminjaman": "tersedia"
+  },
+  {
+    "id": 5,
+    "buku_id": 5,
+    "users_id": null,
+    "tanggal_pinjam": null,
+    "tanggal_kembali": null,
+    "status_peminjaman": "tersedia"
+  },
+  {
+    "id": 6,
+    "buku_id": 6,
+    "users_id": null,
+    "tanggal_pinjam": null,
+    "tanggal_kembali": null,
+    "status_peminjaman": "tersedia"
+  },
+  {
+    "id": 7,
+    "buku_id": 7,
+    "users_id": null,
+    "tanggal_pinjam": null,
+    "tanggal_kembali": null,
+    "status_peminjaman": "tersedia"
+  },
+  {
+    "id": 8,
+    "buku_id": 8,
+    "users_id": null,
+    "tanggal_pinjam": null,
+    "tanggal_kembali": null,
+    "status_peminjaman": "tersedia"
+  },
+  {
+    "id": 9,
+    "buku_id": 9,
+    "users_id": null,
+    "tanggal_pinjam": null,
+    "tanggal_kembali": null,
+    "status_peminjaman": "tersedia"
+  },
+  {
+    "id": 10,
+    "buku_id": 10,
+    "users_id": null,
+    "tanggal_pinjam": null,
+    "tanggal_kembali": null,
+    "status_peminjaman": "tersedia"
+  },
+  {
+    "id": 11,
+    "buku_id": 11,
+    "users_id": null,
+    "tanggal_pinjam": null,
+    "tanggal_kembali": null,
+    "status_peminjaman": "tersedia"
+  },
+  {
+    "id": 12,
+    "buku_id": 12,
+    "users_id": null,
+    "tanggal_pinjam": null,
+    "tanggal_kembali": null,
+    "status_peminjaman": "tersedia"
+  },
+  {
+    "id": 13,
+    "buku_id": 13,
+    "users_id": null,
+    "tanggal_pinjam": null,
+    "tanggal_kembali": null,
+    "status_peminjaman": "tersedia"
+  },
+  {
+    "id": 14,
+    "buku_id": 14,
+    "users_id": null,
+    "tanggal_pinjam": null,
+    "tanggal_kembali": null,
+    "status_peminjaman": "tersedia"
+  }
+]
