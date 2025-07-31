@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "nama": "Harry Potter and the Sorcerer's Stone",
+    "penulis": "J.K. Rowling",
+    "gambar": "https://gpu.id/data-gpu/images/uploads/book/8cc47571da33de1b7937bad6511f26bf.jpg",
+    "genre": "Fantasy",
+    "deskripsi": "A young boy discovers he is a wizard and attends Hogwarts School of Witchcraft and Wizardry.",
+    "popular": true
+  },
+  {
+    "id": 2,
+    "nama": "The Hunger Games",
+    "penulis": "Suzanne Collins",
+    "gambar": "https://gpu.id/data-gpu/images/uploads/dirimg_buku/re_buku_picture_update_85659.jpg",
+    "genre": "Dystopian",
+    "deskripsi": "In a dystopian future, children are selected to fight to the death in a televised arena.",
+    "popular": true
+  },
+  {
+    "id": 3,
+    "nama": "To Kill a Mockingbird",
+    "penulis": "Harper Lee",
+    "gambar": "https://m.media-amazon.com/images/I/81O7u0dGaWL._SL1500_.jpg",
+    "genre": "Classic",
+    "deskripsi": "A young girl in the racially charged American South learns about justice and empathy.",
+    "popular": true
+  },
+  {
+    "id": 4,
+    "nama": "The Great Gatsby",
+    "penulis": "F. Scott Fitzgerald",
+    "gambar": "https://gpu.id/data-gpu/images/uploads/dirimg_buku/re_buku_picture_88290.jpg",
+    "genre": "Classic",
+    "deskripsi": "A mysterious millionaire hosts extravagant parties in search of a lost love.",
+    "popular": true
+  },
+  {
+    "id": 5,
+    "nama": "Pride and Prejudice",
+    "penulis": "Jane Austen",
+    "gambar": "https://gpu.id/data-gpu/images/uploads/dirimg_buku/re_buku_picture_77240.jpg",
+    "genre": "Romance",
+    "deskripsi": "A spirited woman navigates love, status, and misunderstandings in 19th-century England.",
+    "popular": true
+  },
+  {
+    "id": 6,
+    "nama": "Badai Pasti Berlalu",
+    "penulis": "Marga T",
+    "gambar": "https://gpu.id/data-gpu/images/img-book/93535/621172002.jpg",
+    "genre": "Drama Romansa",
+    "deskripsi": "Siska menghadapi patah hati dan konflik cinta yang kompleks.",
+    "popular": true
+  },
+  {
+    "id": 7,
+    "nama": "Lelaki Harimau",
+    "penulis": "Eka Kurniawan",
+    "gambar": "https://gpu.id/data-gpu/images/img-book/94847/624202037.jpg",
+    "genre": "Magical Realism",
+    "deskripsi": "Kisah mistis rakyat ala Indonesia dengan gaya magis dan satir.",
+    "popular": true
+  },
+  {
+    "id": 8,
+    "nama": "Negeri 5 Menara",
+    "penulis": "Ahmad Fuadi",
+    "gambar": "https://gpu.id/data-gpu/images/uploads/book/23f77b55c92f7dc8c7fb0c9d62e91dbc.jpg",
+    "genre": "Inspiratif / Remaja",
+    "deskripsi": "Perjuangan santri muda meraih mimpi lewat enam menara pesantren.",
+    "popular": true
+  },
+  {
+    "id": 9,
+    "nama": "Katarsis",
+    "penulis": "Anastasia Aemilia",
+    "gambar": "https://gpu.id/data-gpu/images/uploads/book/8df7d1dd3b817e92111d11ab323b9cc0.jpg",
+    "genre": "Thriller Psikologi",
+    "deskripsi": "Cerita misteri traumatis yang menggugah emosi dan pikiran.",
+    "popular": false
+  },
+  {
+    "id": 10,
+    "nama": "Autumn in Paris",
+    "penulis": "Ilana Tan",
+    "gambar": "https://gpu.id/data-gpu/images/img-book/93504/621171019.jpg",
+    "genre": "Romansa / Young Adult",
+    "deskripsi": "Cinta lintas budaya di kota musim gugur yang romantis.",
+    "popular": false
+  },
+  {
+    "id": 11,
+    "nama": "Home Sweet Loan",
+    "penulis": "Almira Bastari",
+    "gambar": "https://gpu.id/data-gpu/images/img-book/93660/622171001.jpg",
+    "genre": "Kontemporer / Msheal",
+    "deskripsi": "Drama kehidupan milenial saat mencari rumah pertama di ibu kota.",
+    "popular": false
+  },
+  {
+    "id": 12,
+    "nama": "Si Putih",
+    "penulis": "Tere Liye",
+    "gambar": "https://gpu.id/data-gpu/images/img-book/93361/621153001.jpg",
+    "genre": "Fantasi Remaja",
+    "deskripsi": "Petualangan kucing mistis dengan kekuatan rahasia dunia paralel.",
+    "popular": false
+  },
+  {
+    "id": 13,
+    "nama": "Twilight",
+    "penulis": "Stephenie Meyer",
+    "gambar": "https://gpu.id/data-gpu/images/uploads/dirimg_buku/re_buku_picture_83781.jpg",
+    "genre": "Romance / Fantasy",
+    "deskripsi": "Isabella Swan pindah ke Forks, WA dan bertemu Edward Cullen, vampir yang membalikkan dunia cintanya.",
+    "popular": false
+  },
+  {
+    "id": 14,
+    "nama": "Sang Alkemis (The Alchemist) (2025)",
+    "penulis": "Paulo Coelho",
+    "gambar": "https://gpu.id/data-gpu/images/img-book/94927/625186005.jpg",
+    "genre": "Philosophical Fiction",
+    "deskripsi": "Seorang gembala muda melakukan perjalanan spiritual dalam pencarian harta.",
+    "popular": false
+  }
+]

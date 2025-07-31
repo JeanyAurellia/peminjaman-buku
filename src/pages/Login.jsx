@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
-import { db } from '../db';
+import { db } from '../data/db';
 import { Icon } from '@iconify/react';
 
 function Login() {
@@ -27,6 +27,7 @@ function Login() {
       .first();
 
     if (user) {
+    localStorage.setItem('user', JSON.stringify(user));
       Swal.fire({
         icon: 'success',
         title: 'Login berhasil!',
