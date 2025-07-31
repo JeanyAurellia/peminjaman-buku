@@ -17,10 +17,10 @@ function Navbar({ children }) {
       {/* Sidebar */}
       <aside className="w-60 bg-[#F1F7F7] p-6 flex flex-col justify-between">
         <div>
-          <h1 className="text-2xl font-bold mb-8">MyBook</h1>
+          <h1 className="flex flex-col items-center text-2xl font-bold mb-8 text-black">MyBook</h1>
           <div className="flex flex-col items-center mb-6">
             <FaUserCircle className="text-6xl mb-2 text-gray-600" />
-            <p className="font-semibold text-lg">User</p>
+            <p className="font-semibold text-lg text-black">User</p>
           </div>
 
           <ul className="space-y-4 text-md text-black">

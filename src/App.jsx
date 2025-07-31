@@ -4,6 +4,7 @@ import Dashboard from './pages/Dashboard' // kamu bisa buat ini nanti
 import DashboardAdmin from './pages/DashboardAdmin'
 import Peminjaman from './pages/Peminjaman'
 import Library from './pages/Library'
+import Register from './pages/Register'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path="/dashboardadmin" element={<DashboardAdmin />} />
       <Route path="/peminjaman" element={<Peminjaman />} />
       <Route path="/library" element={<Library />} />
+      <Route path="/register" element={<Register />} />
     </Routes>
   );
 }
