@@ -49,7 +49,7 @@
     "nama": "Badai Pasti Berlalu",
     "penulis": "Marga T",
     "gambar": "https://gpu.id/data-gpu/images/img-book/93535/621172002.jpg",
-    "genre": "Drama Romansa",
+    "genre": "Romance",
     "deskripsi": "Siska menghadapi patah hati dan konflik cinta yang kompleks.",
     "popular": true
   },
@@ -58,7 +58,7 @@
     "nama": "Lelaki Harimau",
     "penulis": "Eka Kurniawan",
     "gambar": "https://gpu.id/data-gpu/images/img-book/94847/624202037.jpg",
-    "genre": "Magical Realism",
+    "genre": "Fantasy",
     "deskripsi": "Kisah mistis rakyat ala Indonesia dengan gaya magis dan satir.",
     "popular": true
   },
@@ -67,7 +67,7 @@
     "nama": "Negeri 5 Menara",
     "penulis": "Ahmad Fuadi",
     "gambar": "https://gpu.id/data-gpu/images/uploads/book/23f77b55c92f7dc8c7fb0c9d62e91dbc.jpg",
-    "genre": "Inspiratif / Remaja",
+    "genre": "Inspirational",
     "deskripsi": "Perjuangan santri muda meraih mimpi lewat enam menara pesantren.",
     "popular": true
   },
@@ -76,7 +76,7 @@
     "nama": "Katarsis",
     "penulis": "Anastasia Aemilia",
     "gambar": "https://gpu.id/data-gpu/images/uploads/book/8df7d1dd3b817e92111d11ab323b9cc0.jpg",
-    "genre": "Thriller Psikologi",
+    "genre": "Thriller",
     "deskripsi": "Cerita misteri traumatis yang menggugah emosi dan pikiran.",
     "popular": false
   },
@@ -85,7 +85,7 @@
     "nama": "Autumn in Paris",
     "penulis": "Ilana Tan",
     "gambar": "https://gpu.id/data-gpu/images/img-book/93504/621171019.jpg",
-    "genre": "Romansa / Young Adult",
+    "genre": "Romance",
     "deskripsi": "Cinta lintas budaya di kota musim gugur yang romantis.",
     "popular": false
   },
@@ -94,7 +94,7 @@
     "nama": "Home Sweet Loan",
     "penulis": "Almira Bastari",
     "gambar": "https://gpu.id/data-gpu/images/img-book/93660/622171001.jpg",
-    "genre": "Kontemporer / Msheal",
+    "genre": "Contemporary",
     "deskripsi": "Drama kehidupan milenial saat mencari rumah pertama di ibu kota.",
     "popular": false
   },
@@ -103,7 +103,7 @@
     "nama": "Si Putih",
     "penulis": "Tere Liye",
     "gambar": "https://gpu.id/data-gpu/images/img-book/93361/621153001.jpg",
-    "genre": "Fantasi Remaja",
+    "genre": "Fantasy",
     "deskripsi": "Petualangan kucing mistis dengan kekuatan rahasia dunia paralel.",
     "popular": false
   },
@@ -112,7 +112,7 @@
     "nama": "Twilight",
     "penulis": "Stephenie Meyer",
     "gambar": "https://gpu.id/data-gpu/images/uploads/dirimg_buku/re_buku_picture_83781.jpg",
-    "genre": "Romance / Fantasy",
+    "genre": "Fantasy",
     "deskripsi": "Isabella Swan pindah ke Forks, WA dan bertemu Edward Cullen, vampir yang membalikkan dunia cintanya.",
     "popular": false
   },
@@ -121,7 +121,7 @@
     "nama": "Sang Alkemis (The Alchemist) (2025)",
     "penulis": "Paulo Coelho",
     "gambar": "https://gpu.id/data-gpu/images/img-book/94927/625186005.jpg",
-    "genre": "Philosophical Fiction",
+    "genre": "Philosophical",
     "deskripsi": "Seorang gembala muda melakukan perjalanan spiritual dalam pencarian harta.",
     "popular": false
   }

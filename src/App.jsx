@@ -8,7 +8,7 @@ import DashboardAdmin from './pages/DashboardAdmin';
 import Peminjaman from './pages/Peminjaman';
 import Library from './pages/Library';
 import Register from './pages/Register';
-import ImageChecker from './pages/ImageChecker';
+import AllBook from './pages/AllBook';
 import DetailBuku from './pages/DetailBuku';
 
 function App() {
@@ -53,7 +53,7 @@ function App() {
       <Route path="/peminjaman/:id" element={<Peminjaman />} />
       <Route path="/library" element={<Library />} />
       <Route path="/register" element={<Register />} />
-      <Route path="/ImageChecker" element={<ImageChecker />} />
+      <Route path="/allbook" element={<AllBook />} />
     </Routes>
   );
 }

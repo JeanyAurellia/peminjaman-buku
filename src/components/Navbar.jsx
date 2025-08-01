@@ -45,15 +45,15 @@ function Navbar({ children }) {
               <Icon icon="material-symbols:home" width="20" height="20" />
               Home
             </li>
-            {/* <li
-              onClick={() => navigate('/peminjaman')}
+            <li
+              onClick={() => navigate('/allbook')}
               className={`cursor-pointer flex items-center gap-2 px-2 py-1 rounded-md
-                ${isActive('/peminjaman') ? 'bg-[#555879] text-white font-semibold' : 'hover:bg-gray-200'}
+                ${isActive('/allbook') ? 'bg-[#555879] text-white font-semibold' : 'hover:bg-gray-200'}
               `}
             >
               <Icon icon="mdi:book-outline" width="20" height="20" />
-              Peminjaman
-            </li> */}
+              All Book
+            </li>
             <li
               onClick={() => navigate('/library')}
               className={`cursor-pointer flex items-center gap-2 px-2 py-1 rounded-md
