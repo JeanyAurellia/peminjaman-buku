@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { db } from "../data/db";
-import Navbar from "../components/Navbar";
+import { db } from "../../data/db";
+import Navbar from "../../components/Navbar";
 import { useNavigate } from "react-router-dom";
 
 function Dashboard() {
@@ -38,7 +38,7 @@ function Dashboard() {
   return (
     <Navbar>
       {/* Hai */}
-      <div className="p-6 rounded-xl mb-6 flex justify-center items-center max-w-3xl mx-auto bg-[#F1F7F7] dark:bg-[#85A5D3]">
+      <div className="p-6 rounded-xl mb-6 flex justify-center items-center max-w-3xl mx-auto bg-[#F1F7F7] dark:bg-[#E2CAD8]">
         <span className="text-2xl font-semibold text-black dark:text-[#0D1E4A]">
           Hai, {user.nama}
         </span>

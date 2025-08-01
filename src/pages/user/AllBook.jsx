@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { db } from "../data/db";
-import Navbar from "../components/Navbar";
+import { db } from "../../data/db";
+import Navbar from "../../components/Navbar";
 import { useNavigate } from "react-router-dom";
 
 function AllBook() {

@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { db } from "../data/db";
-import Navbar from "../components/Navbar";
+import { db } from "../../data/db";
+import Navbar from "../../components/Navbar";
 import Swal from "sweetalert2";
 import { Icon } from "@iconify/react";
-import showSwal  from "../utils/swal";
+import showSwal  from "../../utils/swal";
 
 
 function Library() {

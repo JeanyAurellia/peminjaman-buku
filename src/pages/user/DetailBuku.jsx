@@ -1,8 +1,8 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { db } from "../data/db";
-import Navbar from "../components/Navbar";
-import showSwal from "../utils/swal";
+import { db } from "../../data/db";
+import Navbar from "../../components/Navbar";
+import showSwal from "../../utils/swal";
 import dayjs from "dayjs";
 
 function DetailBuku() {

@@ -3,13 +3,13 @@ import { useEffect } from 'react';
 import { db } from './data/db';
 
 import Login from './pages/Login';
-import Dashboard from './pages/Dashboard';
-import DashboardAdmin from './pages/DashboardAdmin';
-import Peminjaman from './pages/Peminjaman';
-import Library from './pages/Library';
-import Register from './pages/Register';
-import AllBook from './pages/AllBook';
-import DetailBuku from './pages/DetailBuku';
+import Dashboard from './pages/user/Dashboard';
+import DashboardAdmin from './pages/admin/DashboardAdmin';
+import Peminjaman from './pages/user/Peminjaman';
+import Library from './pages/user/Library';
+import Register from './pages/user/Register';
+import AllBook from './pages/user/AllBook';
+import DetailBuku from './pages/user/DetailBuku';
 
 function App() {
   useEffect(() => {
