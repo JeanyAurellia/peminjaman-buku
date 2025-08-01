@@ -49,7 +49,7 @@ function AllBook() {
   return (
     <Navbar>
       <div className="p-6 max-w-6xl mx-auto">
-        <h2 className="text-2xl font-bold text-center mb-4 text-black">All Book</h2>
+        <h2 className="text-2xl font-bold text-center mb-4 text-black dark:text-white">All Book</h2>
 
         {/* Filter Genre */}
         <div className="flex flex-wrap justify-center gap-2 mb-6">
@@ -58,7 +58,7 @@ function AllBook() {
             className={`px-4 py-2 rounded-full border ${
               selectedGenre === "Semua"
                 ? "bg-[#555879] text-white"
-                : "bg-white text-[#555879] border-[#555879]"
+                : "bg-white dark:bg-[#E2CAD8] text-[#555879] dark:text-[#555879] border-[#555879]"
             }`}
           >
             Semua
@@ -69,8 +69,8 @@ function AllBook() {
               onClick={() => handleFilter(genre)}
               className={`px-4 py-2 rounded-full border ${
                 selectedGenre === genre
-                  ? "bg-[#555879] text-white"
-                  : "bg-white text-[#555879] border-[#555879]"
+                ? "bg-[#555879] text-white"
+                : "bg-white dark:bg-[#E2CAD8] text-[#555879] dark:text-[#555879] border-[#555879]"
               }`}
             >
               {genre}
@@ -83,7 +83,7 @@ function AllBook() {
           {filteredBooks.map((book) => (
             <div
               key={book.id}
-              className="bg-white rounded-lg shadow p-3 cursor-pointer hover:shadow-md transition"
+              className="bg-white dark:bg-[#2A3944] rounded-lg shadow p-3 cursor-pointer hover:shadow-md transition"
               onClick={() => navigate(`/detailbuku/${book.id}`)}
             >
               <img
@@ -91,8 +91,8 @@ function AllBook() {
                 alt={book.nama}
                 className="w-full h-40 object-cover rounded-md mb-2"
               />
-              <h3 className="font-semibold text-gray-800">{book.nama}</h3>
-              <p className="text-sm text-gray-600">{book.penulis}</p>
+              <h3 className="font-semibold text-gray-800 dark:text-white">{book.nama}</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-300">{book.penulis}</p>
               <p
                 className={`text-xs font-medium mt-1 ${
                   bookStatusMap[book.id] === "Tersedia"

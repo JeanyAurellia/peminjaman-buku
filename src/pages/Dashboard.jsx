@@ -37,19 +37,21 @@ function Dashboard() {
 
   return (
     <Navbar>
-      <div className="bg-[#F1F7F7] p-6 rounded-xl mb-6 flex justify-center items-center max-w-3xl mx-auto">
-        <span className="text-2xl font-semibold text-gray-700">
+      {/* Hai */}
+      <div className="p-6 rounded-xl mb-6 flex justify-center items-center max-w-3xl mx-auto bg-[#F1F7F7] dark:bg-[#85A5D3]">
+        <span className="text-2xl font-semibold text-black dark:text-[#0D1E4A]">
           Hai, {user.nama}
         </span>
       </div>
 
-      <h2 className="text-xl font-semibold text-gray-800 mb-4 text-center">Popular</h2>
+      <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-4 text-center">Popular</h2>
 
       <div className="px-8 grid grid-cols-4 gap-6">
         {popularBooks.map((book) => (
           <div
             key={book.id}
-            className="bg-white rounded-lg shadow p-3 cursor-pointer hover:shadow-lg transition"
+            className="rounded-lg shadow p-3 cursor-pointer hover:shadow-lg transition
+                      bg-white dark:bg-[#2A3944]"
             onClick={() => navigate(`/detailbuku/${book.id}`)}
           >
             <img
@@ -57,8 +59,8 @@ function Dashboard() {
               alt={book.nama}
               className="w-full h-40 object-cover rounded-md mb-2"
             />
-            <h3 className="text-md font-semibold text-gray-800">{book.nama}</h3>
-            <p className="text-sm text-gray-600">{book.penulis}</p>
+            <h3 className="text-md font-semibold text-gray-800 dark:text-white">{book.nama}</h3>
+            <p className="text-sm text-gray-600 dark:text-gray-300">{book.penulis}</p>
             <p
               className={`text-xs mt-1 font-medium ${
                 cekKetersediaan(book.id) === "Tersedia"

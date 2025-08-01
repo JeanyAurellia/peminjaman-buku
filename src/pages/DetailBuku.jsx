@@ -2,7 +2,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { db } from "../data/db";
 import Navbar from "../components/Navbar";
-import Swal from "sweetalert2";
+import showSwal from "../utils/swal";
 import dayjs from "dayjs";
 
 function DetailBuku() {
@@ -32,50 +32,56 @@ function DetailBuku() {
     fetchBook();
   }, [id]);
 
-  const handlePinjam = () => {
-    Swal.fire({
+  const handlePinjam = async () => {
+    const result = await showSwal({
       title: "Apakah Anda yakin ingin meminjam buku ini?",
       icon: "question",
       showCancelButton: true,
       confirmButtonText: "Ya, Pinjam",
       cancelButtonText: "Batal",
-    }).then(async (result) => {
-      if (result.isConfirmed && user) {
-        const tanggalPinjam = dayjs().format("YYYY-MM-DD");
-        const tanggalKembali = dayjs().add(7, "day").format("YYYY-MM-DD");
-
-        // Cari entri peminjaman yang masih tersedia untuk buku ini
-        const peminjamanTersedia = await db.peminjaman
-          .where("buku_id")
-          .equals(Number(id))
-          .and((p) => p.status_peminjaman === "tersedia")
-          .first();
-
-        if (peminjamanTersedia) {
-          // Update entri peminjaman yang tersedia
-          await db.peminjaman.update(peminjamanTersedia.id, {
-            users_id: user.id,
-            tanggal_pinjam: tanggalPinjam,
-            tanggal_kembali: tanggalKembali,
-            status_peminjaman: "tidak tersedia",
-          });
-
-          setStatusPeminjaman("Tidak Tersedia");
-
-          Swal.fire("Berhasil!", "Buku berhasil dipinjam.", "success");
-        } else {
-          Swal.fire("Gagal", "Buku ini sudah dipinjam oleh orang lain.", "error");
-        }
-      }
     });
-  };
 
+    if (result.isConfirmed && user) {
+      const tanggalPinjam = dayjs().format("YYYY-MM-DD");
+      const tanggalKembali = dayjs().add(7, "day").format("YYYY-MM-DD");
+
+      const peminjamanTersedia = await db.peminjaman
+        .where("buku_id")
+        .equals(Number(id))
+        .and((p) => p.status_peminjaman === "tersedia")
+        .first();
+
+      if (peminjamanTersedia) {
+        await db.peminjaman.update(peminjamanTersedia.id, {
+          users_id: user.id,
+          tanggal_pinjam: tanggalPinjam,
+          tanggal_kembali: tanggalKembali,
+          status_peminjaman: "tidak tersedia",
+        });
+
+        setStatusPeminjaman("Tidak Tersedia");
+
+        await showSwal({
+          title: "Berhasil!",
+          text: "Buku berhasil dipinjam.",
+          icon: "success",
+          confirmButtonText: "OK",
+        });
+      } else {
+        await showSwal({
+          title: "Gagal",
+          text: "Buku ini sudah dipinjam oleh orang lain.",
+          icon: "error",
+        });
+      }
+    }
+  };
 
   if (!book || !user) return <div>Loading...</div>;
 
   return (
     <Navbar>
-      <div className="max-w-4xl mx-auto p-6 bg-white rounded-xl shadow mt-8">
+      <div className="max-w-4xl mx-auto p-6 bg-white dark:bg-[#2A3944] rounded-xl shadow mt-8 transition-colors">
         <div className="flex flex-col md:flex-row gap-6">
           <img
             src={book.gambar}
@@ -83,14 +89,16 @@ function DetailBuku() {
             className="w-full md:w-60 h-80 object-cover rounded-lg"
           />
           <div>
-            <h2 className="text-2xl font-bold text-gray-800">{book.nama}</h2>
-            <p className="text-gray-600 mt-1">Penulis: {book.penulis}</p>
-            <p className="text-gray-600 mt-1">Genre: {book.genre}</p>
-            <p className="text-gray-700 mt-4">{book.deskripsi}</p>
+            <h2 className="text-2xl font-bold text-gray-800 dark:text-[#D6BECC]">{book.nama}</h2>
+            <p className="text-gray-600 dark:text-gray-300 mt-1">Penulis: {book.penulis}</p>
+            <p className="text-gray-600 dark:text-gray-300 mt-1">Genre: {book.genre}</p>
+            <p className="text-gray-700 dark:text-gray-200 mt-4">{book.deskripsi}</p>
 
             <p
               className={`mt-4 font-semibold ${
-                statusPeminjaman === "Tersedia" ? "text-green-600" : "text-red-600"
+                statusPeminjaman === "Tersedia"
+                  ? "text-green-600"
+                  : "text-red-600"
               }`}
             >
               {statusPeminjaman}

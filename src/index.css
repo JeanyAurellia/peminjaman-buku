@@ -72,3 +72,24 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.swal2-confirm {
+  background-color: #85A5D3 !important;
+  color: #fff !important;
+  border-radius: 0.5rem !important;
+}
+.dark .swal2-confirm {
+  background-color: #E2CAD8 !important;
+  color: #0D1E4A !important;
+}
+
+.swal2-cancel {
+  background-color: #D35555 !important;
+  color: #fff !important;
+  border-radius: 0.5rem !important;
+}
+.dark .swal2-cancel {
+  background-color: #F16F6F !important;
+  color: #2A3944 !important;
+}
+
