@@ -1,12 +1,39 @@
-# React + Vite
+# 📚 MyBook – Web Perpustakaan Digital
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MyBook adalah aplikasi web perpustakaan digital yang memungkinkan pengguna untuk mencari, meminjam, dan mengelola buku secara efisien, serta menyediakan dashboard admin untuk manajemen data. Dibuat dengan 💻 **React.js**, **Dexie.js** untuk database lokal IndexedDB, dan dilengkapi tampilan responsif bertema dark style ✨.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo  
+🌐 [Coba Aplikasinya di Sini](peminjaman-buku-sigma.vercel.app)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Fitur Utama
+
+### 👥 Untuk Pengguna
+
+* 🔐 **Register & Login** – Sistem autentikasi berbasis lokal.
+* 📖 **Lihat semua buku** – Jelajahi koleksi buku yang tersedia.
+* 📚 **Pinjam Buku** – Pinjam buku dan kelola daftar pinjamanmu.
+* 📂 **Library** – Melihat buku yang sedang dipinjam & mengembalikannya.
+* 🌙 **Dark Mode** – Tampilan nyaman di mata, bisa diaktifkan/dimatikan.
+* 🔒 **Lupa Password** – Reset kata sandi jika lupa.
+
+### 🛠️ Untuk Admin
+
+* 📊 **Dashboard** – Lihat ringkasan total user, buku, dan buku yang sedang dipinjam.
+* 👤 **Manajemen User** – CRUD data user.
+* 📘 **Manajemen Buku** – CRUD data buku.
+* 🏷️ **Buku Dipinjam** – Lihat semua buku yang sedang dipinjam user.
+
+---
+
+## 🛠️ Teknologi yang Digunakan
+
+* ♋️ **React.js** – Library utama untuk membangun antarmuka.
+* 📁 **Dexie.js** – Wrapper IndexedDB untuk database di sisi klien.
+* 🧹 **React Router** – Navigasi antar halaman.
+* 🎨 **Tailwind CSS** – Styling cepat dan responsif.
+* 🧁 **SweetAlert2** – Pop-up interaktif untuk feedback pengguna.
+* 🌗 **Dark Mode** – Manual toggle dengan persistensi.
