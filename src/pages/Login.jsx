@@ -36,7 +36,7 @@ function Login() {
         showConfirmButton: false,
       }).then(() => {
         if (user.email === 'admin@example.com') {
-          navigate('/dashboardadmin');
+          navigate('/admin');
         } else {
           navigate('/dashboard');
         }
