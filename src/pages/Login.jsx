@@ -90,7 +90,7 @@ function Login() {
             <input type="checkbox" className="accent-white" />
             Remember me
           </label>
-          <a href="#" className="hover:underline">Forgot password?</a>
+          <a href="/forgot-password" className="hover:underline">Forgot password?</a>
         </div>
 
         <button

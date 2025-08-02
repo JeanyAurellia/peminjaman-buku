@@ -10,6 +10,7 @@ import Library from './pages/user/Library';
 import Register from './pages/user/Register';
 import AllBook from './pages/user/AllBook';
 import DetailBuku from './pages/user/DetailBuku';
+import ForgotPw from './pages/ForgotPw';
 
 function App() {
   useEffect(() => {
@@ -54,6 +55,7 @@ function App() {
       <Route path="/library" element={<Library />} />
       <Route path="/register" element={<Register />} />
       <Route path="/allbook" element={<AllBook />} />
+      <Route path="/forgot-password" element={<ForgotPw />} />
     </Routes>
   );
 }
