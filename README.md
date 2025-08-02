@@ -4,7 +4,7 @@ MyBook adalah aplikasi web perpustakaan digital yang memungkinkan pengguna untuk
 
 ---
 
-## 🚀 Live Demo  
+## 👀 Live Demo  
 🌐 [Coba Aplikasinya di Sini](https://peminjaman-buku-sigma.vercel.app/)
 
 ---
@@ -29,7 +29,7 @@ MyBook adalah aplikasi web perpustakaan digital yang memungkinkan pengguna untuk
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
+## 💻 Teknologi yang Digunakan
 
 * ♋️ **React.js** – Library utama untuk membangun antarmuka.
 * 📁 **Dexie.js** – Wrapper IndexedDB untuk database di sisi klien.
