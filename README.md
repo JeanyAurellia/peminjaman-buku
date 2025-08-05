@@ -4,8 +4,9 @@ MyBook adalah aplikasi web perpustakaan digital yang memungkinkan pengguna untuk
 
 ---
 
-## 👀 Live Demo  
+## 👀 Live Demo  & Documentation
 🌐 [Coba Aplikasinya di Sini](https://peminjaman-buku-sigma.vercel.app/)
+📄 [Documentation](https://drive.google.com/file/d/1UepDNEujAybzl6kIoHveiwtW2jBmr268/view?usp=sharing)
 
 ---
 
